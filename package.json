@@ -1,0 +1,48 @@
+{
+  "name": "grunt-gherkin-feature-report",
+  "description": "Generate a marketing-worthy report of your application's features and scenarios.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/actmd/grunt-gherkin-feature-report",
+  "author": {
+    "name": "Jonathan Abbett",
+    "email": "jonathan@act.md",
+    "url": "http://act.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/actmd/grunt-gherkin-feature-report"
+  },
+  "bugs": {
+    "url": "https://github.com/actmd/grunt-gherkin-feature-report/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/actmd/grunt-gherkin-feature-report/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.9.2",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt": "~0.4.5"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.5"
+  },
+  "keywords": [
+    "gruntplugin",
+    "gherkin"
+  ],
+  "dependencies": {
+    "gherkin": "^2.12.2",
+    "handlebars": "^3.0.3",
+    "underscore": "^1.8.3"
+  }
+}
