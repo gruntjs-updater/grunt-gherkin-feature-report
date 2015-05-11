@@ -41,7 +41,7 @@
     "gherkin"
   ],
   "dependencies": {
-    "gherkin": "^2.12.2",
+    "gherkin": "git://github.com/cucumber/gherkin-javascript",
     "handlebars": "^3.0.3",
     "underscore": "^1.8.3"
   }
