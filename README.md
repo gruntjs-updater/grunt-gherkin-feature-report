@@ -6,6 +6,18 @@ This handy Grunt plugin will take a bunch of Gherkin-language feature files and 
 (in Markdown, for now) containing each feature with a bulleted list of scenarios. You can easily exclude
 particular features or scenarios from the report.
 
+```markdown
+## Medical Record Numbers
+- Manage a patient's medical record numbers
+- Show a relevant patient MRN in the team header
+
+
+## Team Patient Summary
+- Update the patient summary as a provider
+- Request to update the patient summary as a patient
+- View a patient summary updated by a different team member
+```
+
 ## Why?
 
 It's important for our customers to know what they're getting when they buy our software.
