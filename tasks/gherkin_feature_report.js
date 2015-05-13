@@ -13,7 +13,7 @@ module.exports = function(grunt) {
     var Gherkin = require('gherkin'),
         Handlebars = require('handlebars'),
         _ = require('underscore'),
-        template = Handlebars.compile('## {{{name}}}\n{{#if description}}> {{{description}}}\n{{/if}}{{#each scenarioDefinitions}}- {{{name}}}\n{{/each}}');
+        template = Handlebars.compile('## {{{name}}}\n{{#if descriptionLines}}{{#each descriptionLines}}> {{{this}}}\n{{/each}}{{/if}}\n{{#each scenarioDefinitions}}- {{{name}}}\n{{/each}}');
 
     // Please see the Grunt documentation for more information regarding task
     // creation: http://gruntjs.com/creating-tasks
@@ -53,6 +53,11 @@ module.exports = function(grunt) {
                 feature.scenarioDefinitions = feature.scenarioDefinitions.filter(function(scenario) {
                     return _.findWhere(scenario.tags, { name: options.exclusionTag }) === undefined;
                 });
+
+                if (feature.description && feature.description.length) {
+                    feature.descriptionLines = feature.description.split("\n")
+                        .map(function(line) { return line.trim(); });
+                }
 
                 /*
                  {

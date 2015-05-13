@@ -1,7 +1,7 @@
 {
   "name": "grunt-gherkin-feature-report",
   "description": "Generate a marketing-worthy report of your application's features and scenarios.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/actmd/grunt-gherkin-feature-report",
   "author": {
     "name": "Jonathan Abbett",

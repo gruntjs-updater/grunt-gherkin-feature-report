@@ -30,8 +30,8 @@ exports.gherkin_feature_report = {
     default_options: function(test) {
         test.expect(1);
 
-        var actual = grunt.file.read('tmp/report_default.txt'),
-            expected = grunt.file.read('test/expected/report_default.txt');
+        var actual = grunt.file.read('tmp/report_default.md'),
+            expected = grunt.file.read('test/expected/report_default.md');
 
         test.equal(actual, expected);
         test.done();
@@ -39,8 +39,8 @@ exports.gherkin_feature_report = {
     custom_options: function(test) {
         test.expect(1);
 
-        var actual = grunt.file.read('tmp/report_custom.txt'),
-            expected = grunt.file.read('test/expected/report_custom.txt');
+        var actual = grunt.file.read('tmp/report_custom.md'),
+            expected = grunt.file.read('test/expected/report_custom.md');
 
         test.equal(actual, expected);
         test.done();
