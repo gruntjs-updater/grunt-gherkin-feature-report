@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         gherkin_feature_report: {
             default_options: {
                 files: [
-                    {src: ['test/fixtures/*.feature'], dest: 'tmp/report_default.txt'}
+                    {src: ['test/fixtures/*.feature'], dest: 'tmp/report_default.md'}
                 ]
             },
             custom_options: {
@@ -40,7 +40,7 @@ module.exports = function(grunt) {
                     exclusionTag: '@mrn1'
                 },
                 files: [
-                    {src: ['test/fixtures/*.feature'], dest: 'tmp/report_custom.txt'}
+                    {src: ['test/fixtures/*.feature'], dest: 'tmp/report_custom.md'}
                 ]
             }
         },

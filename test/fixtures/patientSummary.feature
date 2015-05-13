@@ -1,4 +1,6 @@
 Feature: Team Patient Summary
+  This is the feature description.
+  Second line of description.
 
   @patientSummary1
   Scenario: Update the patient summary as a provider
