@@ -42,7 +42,6 @@ module.exports = function(grunt) {
 
                 var feature = parser.parse(
                     new Gherkin.TokenScanner(grunt.file.read(filepath)),
-                    new Gherkin.AstBuilder(),
                     new Gherkin.TokenMatcher());
 
                 // Don't include this feature in the report
